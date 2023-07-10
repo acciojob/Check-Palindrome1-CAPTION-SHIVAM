@@ -1,6 +1,6 @@
 // complete the given function
 
-function palindrome(str){
+function palindrome(s){
  const formattedString = s.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
 
   let left = 0;
