@@ -1,19 +1,12 @@
 // complete the given function
 
-function palindrome(s){
- const formattedString = s.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
-
-  let left = 0;
-  let right = formattedString.length - 1;
-
-  while (left < right) {
-    if (formattedString[left] !== formattedString[right]) {
-      return false; // Characters don't match, not a palindrome
-    }
-    left++;
-    right--;
-  }
-
-  return true;
+function palindrome(str){
+for(let i=0;i<str.length;i++){
+	if(str.charAt(i)==str.charAt(str.length-1)){
+		return true 
+	}
+}
+	return false;
+	
 }
 module.exports = palindrome
